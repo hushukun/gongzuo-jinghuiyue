@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.register{
+    width: 960px;
+    margin: 0 auto;
+    padding: 40px 4px;
+    header{
+        padding: 4px;
+        display: flex;
+        align-items: center;
+        div:nth-of-type(1){
+            width: 153px;
+            height: 58px;
+            margin: 4px 12px 0 0;
+            img{
+                float: right;
+                width: 130px;
+                height: 58px;
+            }
+        }
+        .xian{
+            width: 1px;
+            height: 30px;
+            background: #ccc;
+            margin-top: 10px;
+        }
+        p{
+            padding-left: 12px;
+            height: 49px;
+            line-height: 49px;
+            font-size: 22px;
+            font-weight: 700;
+            color: #666;
+            margin: 0;
+        }
+    }
+    .main{
+        width: 100%;
+        text-align: center;
+        h2{
+            text-align: center;
+            margin: 0;
+            font-weight: 400;
+            line-height: 47px;
+            color: #f50;
+        }
+        .xian{
+            width: 100%;
+            border-top: 1px solid #f10;
+        }
+        .user{
+            display: inline-block;
+            margin: 30px auto 0;
+            form{
+                div{
+                    margin: 20px 0;
+                    input{
+                        width: 300px;
+                        height: 38px;
+                        box-sizing: border-box;
+                        padding-left: 5px;
+                        outline-color: #f50;
+                    }
+                    span{
+                        display: inline-block;
+                        width: 100px;
+                        line-height: 38px;
+                        text-align: right;
+                        margin-right: 10px;
+                    }
+                }
+                .radio{
+                    line-height: 20px;
+                    div{
+                        display: inline-block;
+                        width: 300px;
+                        margin: 0;
+                        text-align: left;
+                        label{
+                            display: inline-block;
+                            width: 60px;
+                            height: 30px;
+                            line-height: 30px;
+                            input{
+                                float: left;
+                                width: 20px;
+                                height: 20px;
+                                margin: 5px 5px 0 0;
+                            }
+                        }
+                    }
+                }
+                button{
+                    height: 40px;
+                    width: 200px;
+                    margin-left: 80px;
+                    margin-top: 20px;
+                    border: none;
+                    background: #f50;
+                    color: #fff;
+                    cursor: pointer;
+                    &:hover{
+                        background: #f10; 
+                    }
+                }
+            }
+        }
+    }
+}
+.footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    background: #ccc;
+    opacity: 0.5;
+    line-height: 40px;
+    text-align: center;
+}

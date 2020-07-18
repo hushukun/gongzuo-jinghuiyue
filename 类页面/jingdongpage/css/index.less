@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html,
+body {
+    background: #f2f2f2;
+}
+
+// 头部搜索
+.header-bg {
+    padding: 20px 0 10px 0;
+    .header {
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center; 
+        background: #fff;
+        .logo {
+            img {
+                display: inline-block;
+                margin: 3px 0px 0px 10px;
+                width: 190px;
+                height: 120px;
+            }
+        }
+
+        .search-warp {
+            flex: 1;
+
+            .search {
+                width: 750px;
+                height: 40px;
+                margin-left: 80px;
+                border: 2px solid #e1251b;
+                line-height: 40px;
+                text-align: center;
+                display: flex;
+
+                i {
+                    width: 40px;
+                    height: 40px;
+                    display: inline-block;
+                    text-align: center;
+                    font-size: 22px;
+                    color: #e1251b;
+                }
+
+                input {
+                    width: 560px;
+                    padding-left: 10px;
+                    border: none;
+                    outline: none;
+                    background: #ffffff;
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 14px;
+                }
+
+                button {
+                    width: 140px;
+                    height: 40px;
+                    background: #e1251b;
+                    border: none;
+                    outline: none;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+}
+
+// 分类导航
+.category-bg {
+    background: url("../images/body-bg.webp") top center no-repeat;
+    .category {
+        width: 1200px;
+        min-height: 470px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        .left-nav {
+            width: 200px;
+            font-family: "新宋体";
+            background: #fff;
+            min-height: 470px;
+            .nav {
+                width: 100%;
+                min-height: 470px;
+                position: relative;
+                .nav-item {
+                    width: 190px;
+                    padding-left: 10px;
+                    height: 30px;
+                    .navBlock {
+                        padding-left: 10px;
+                        .title {
+                            width: 100%;
+                            overflow: hidden;
+                            height: 30px;
+                            line-height: 30px;
+                            a {
+                                font-size: 14px;
+                                color: #333;
+                                margin-right: 5px;
+                                &:hover {
+                                    color: #ff2900;
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                        background: #d9d9d9;
+                        .navNone {
+                            display: block;
+                        }
+                    }
+
+                    .navNone {
+                        width: 750px;
+                        min-height: 430px;
+                        overflow-y: auto;
+                        background: #fff;
+                        padding: 20px;
+                        box-shadow: 2px 0 5px rgba(0,0,0,.3);
+                        position: absolute;
+                        top: 0px;
+                        left: 200px;
+                        z-index: 999;
+                        display: none;
+
+                        .navNone-title {
+                            div {
+                                display: flex;
+                                margin-bottom: 12px;
+                                h3 {
+                                    font-size: 12px;
+                                    font-weight: 700;
+                                    height: 20px;
+                                    line-height: 20px;
+                                    min-width: 100px;
+                                    text-overflow: ellipsis;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    margin-right: 5px;
+                                }
+                                p {
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    a {
+                                        display: inline-block;
+                                        height: 20px;
+                                        line-height: 20px;
+                                        vertical-align: middle;
+                                        font-size: 12px;
+                                        color: #333;
+                                        margin-right: 12px;
+                                        &:hover {
+                                            text-decoration: underline;
+                                            color: #ff2900;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .banner-wrap {
+            width: 790px;
+            display: flex;
+
+            .banner {
+                width: 590px;
+                height: 470px;
+                margin-left: 5px;
+                position: relative;
+                cursor: pointer;
+
+                .banner-img {
+                    list-style: none;
+                    position: relative;
+
+                    li {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        display: none;
+                    }
+
+                    li.active {
+                        display: block;
+                    }
+                }
+
+                .dots {
+                    list-style: none;
+                    height: 20px;
+                    padding: 0 10px;
+                    // background: #ff2900;
+                    border-radius: 10px;
+                    position: absolute;
+                    bottom: 10px;
+                    left: 20px;
+                    text-align: center;
+                    line-height: 20px;
+
+                    li {
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                        background: #CCCCCC;
+                        display: inline-block;
+                    }
+
+                    li.active {
+                        background: #fff;
+                    }
+                }
+            }
+
+            .banner.bannermin {
+                width: 190px;
+
+                img {
+                    width: 190px;
+                }
+            }
+        }
+
+        .right-login {
+            width: 200px;
+            height: 470px;
+            background: #fff;
+
+            .login {
+                width: 100%;
+                text-align: center;
+
+                img {
+                    margin-top: 20px;
+                }
+
+                h3 {
+                    color: #e1251b;
+                    line-height: 50px;
+                }
+
+                button {
+                    width: 90%;
+                    height: 40px;
+                    border: none;
+                    background: #e1251b;
+                    color: #ffffff;
+                    margin: 5px 0;
+                    outline: none;
+                    cursor: pointer;
+                    &:hover{
+                        background: #bd150d;
+                    }
+                }
+            }
+
+            .advertising {
+                width: 100%;
+                text-align: center;
+                margin-top: 20px;
+
+                img {
+                    width: 190px;
+                    height: 120px;
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+    // 底部图片
+    .category-img {
+        width: 1200px;
+        margin: 30px auto 0;
+        img{
+            width: 100%;
+        }
+    }
+}
+// 底部
+.footer {
+    width: 100%;
+    height: 40px;
+    background: #ccc;
+    opacity: 0.5;
+    line-height: 40px;
+    text-align: center;
+}

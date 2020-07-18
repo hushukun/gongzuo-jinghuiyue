@@ -1,0 +1,93 @@
+.news{
+  width: 94%;
+  padding: 0 3%;
+  background: #f2f2f2;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.scroll{
+  padding: 20rpx 0;
+}
+.main-item{
+  padding: 0 20rpx;
+  background: #fff;
+  margin-bottom: 20rpx;
+  position: relative;
+  padding-bottom: 20rpx;
+}
+.item-title{
+  height: 98rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fbb51f;
+  box-sizing: border-box;
+  margin-bottom: 20rpx;
+}
+.item-title text{
+  font-size: 36rpx;
+}
+.information{
+  padding: 12rpx 0;
+  display: flex;
+  align-items: center;
+}
+.information text{
+  flex: 1;
+  font-size: 24rpx;
+  color: #666;
+}
+.button-list{
+  display: flex;
+  margin: 10rpx 0 0;
+}
+.button-list .btn{
+  height: 44rpx;
+  line-height: 44rpx;
+  font-size: 24rpx;
+  padding: 0 20rpx;
+  margin: 0;
+  margin-right: 20rpx;
+}
+.button-list .btn.edit{
+  width: 100rpx;
+  background: #f9eed9;
+  color: #d99002;
+}
+.button-list .btn.delete{
+  width: 100rpx;
+  background: #d9f2eb;
+  color: #00ab7c;
+}
+.button-list .btn.user{
+  width: 140rpx;
+  background: #f2d9e1;
+  color: #ab0038;
+}
+.button-list .btn.visit{
+  width: 140rpx;
+  background: #d9def2;
+  color: #0024ab;
+}
+
+.sanjiao{
+  width: 0;
+  height: 0;
+  border: 20rpx solid;
+  border-color: #fbb51f transparent transparent transparent;
+  margin-bottom: 10rpx;
+  position: absolute;
+  bottom: -12rpx;
+  right: 20rpx;
+}
+.sanjiao.sanjiaos{
+  border-color: transparent transparent #fbb51f transparent;
+  bottom: 0;
+}
+.dataNone{
+  text-align: center;
+  margin-top: 40rpx;
+  font-size: 48rpx;
+  color: #ccc;
+}

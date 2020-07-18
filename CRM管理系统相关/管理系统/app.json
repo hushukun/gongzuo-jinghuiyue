@@ -1,0 +1,24 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/mail-edit/mail-edit",
+    "pages/mail-add/mail-add",
+    "pages/login/login",
+    "pages/edit/edit",
+    "pages/Add-information/Add-information",
+    "pages/visit/visit",
+    "pages/mail-list/mail-list",
+    "pages/visit-add/visit-add",
+    "pages/visit-edit/visit-edit",
+    "pages/logs/logs",
+    "pages/news/news"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "CRM管理系统",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

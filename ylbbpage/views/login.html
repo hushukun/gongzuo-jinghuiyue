@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录页面</title>
+    <link rel="stylesheet/less" type="text/css" href="../css/login.less" />
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <script src="../js/less.min.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/jquery.form.min.js"></script>
+    <script src="../js/url.js"></script>
+</head>
+
+<body>
+    <div class="login">
+        <header>
+            <div><a href="../index.html"><img src="../images/1688logo.png" alt=""></a></div>
+            <div class="xian"></div>
+            <p>登录</p>
+        </header>
+        <div class="content-wrap">
+            <div class="content">
+                <div></div>
+                <div class="user-wrap">
+                    <h2>用户登录</h2>
+                    <form action="" method="POST" id="forms">
+                        <div class="user">
+                            <div><i class="iconfont icon-user"></i></div>
+                            <input type="text" placeholder="请输入用户名" name="username" required>
+                        </div>
+                        <div class="password">
+                            <div><i class="iconfont icon-mima"></i></div>
+                            <input type="password" placeholder="请输入密码" name="password" required>
+                        </div>
+                        <button type="submit" id="submit">登录</button>
+                    </form>
+                    <div class="return-index">
+                        <a href="../index.html"></a>
+                        <a href="../views/register.html">没有帐户？去注册</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        2020 京慧越公司 版权所有
+    </div>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

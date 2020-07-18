@@ -1,0 +1,19 @@
+<!-- 登陆页面 -->
+<view class="login">
+	<view class="main">
+		<view class="number">
+			<text>账号</text>
+			<input placeholder="请输入账号" bindinput="accountFn"></input>
+		</view>
+		<view class="number">
+			<text>密码</text>
+			<input password="true" placeholder="请输入密码" bindinput="passwordFn"></input>
+		</view>
+		<view class="button">
+			<button bindtap="landFn">登陆</button>
+		</view>
+		<view class="text">
+			本小程序登陆账号由京慧越公司提供，由京慧越公司内部人员使用，暂不对外开放
+		</view>
+	</view>
+</view>

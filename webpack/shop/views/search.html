@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜索页面</title>
+    <link rel="stylesheet/less" type="text/css" href="../css/search.less" />
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <script src="../js/less.js"></script>
+    <script src="../js/jquery.js"></script>
+</head>
+
+<body>
+    <div class="search" id="search">
+        <div class="header" id="header">
+            <header>
+                <div class="logo">
+                    <a href="../index.html"><img src="../images/logo.png" alt=""></a>
+                </div>
+                <div class="span">商品搜索</div>
+                <div class="search-warp">
+                    <div class="search">
+                        <i class="iconfont icon-sousuo"></i>
+                        <input type="text" placeholder="请输入产品名称" id="inputValue">
+                        <button id="clackSearch">搜索</button>
+                    </div>
+                    <div class="shouye">
+                        <a href="../index.html"><button>返回首页</button></a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="main" id="main">
+            <p class="p-title">所有类目</p>
+            <div class="nav" id="nav"></div>
+            <ul class="main-list">
+                <!-- <li>
+                    <div class="image">
+                        <a href="">
+                            <img src="../images/search-product.jpg" alt="" title="点击查看详情">
+                        </a>
+                    </div>
+                    <div class="title">
+                        <a href="">
+                            秦弩2020新款男士休闲西裤免烫修身版男直通裤百搭商务男西裤
+                        </a>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+        <div class="paging">
+            <div id="all"></div>
+            <button id="prev">上一页</button>
+            <div id="several">第1页</div>
+            <button id="next">下一页</button>
+        </div>
+        <div class="footer">
+            2020 京慧越公司 版权所有
+        </div>
+    </div>
+    <script src="../js/search.js"></script>
+</body>
+
+</html>

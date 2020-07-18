@@ -1,0 +1,33 @@
+/* pages/Add-information/Add-information.wxss */
+.add-user{
+  width: 94%;
+  border-top: 1px solid #b0b0b0;
+  padding: 0 3% 50rpx;
+}
+.school text{
+  font-size: 24rpx;
+  color: #666666;
+}
+.school .input{
+  border-bottom: 1px solid #ccc;
+  margin: 0 0 40rpx 0;
+}
+.school .input input,.school .input view{
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 30rpx;
+}
+.button{
+  width: 100% !important;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background: #0093ee;
+  border-radius: 16rpx;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.button-hover{
+  background: #1a53cc;
+}

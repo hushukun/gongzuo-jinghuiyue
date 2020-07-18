@@ -1,0 +1,49 @@
+.login{
+  width: 94%;
+  padding: 0 3%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.main{
+  margin-top: 80rpx;
+}
+.number{
+  height: 74rpx;
+  display: flex;
+  align-items: center;
+  border: 1px solid #dbdbdb;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  font-size: 30rpx;
+  margin-bottom: 40rpx;
+}
+.number text{
+  width: 130rpx;
+  text-align: center;
+}
+.number input{
+  flex: 1;
+  height: 100%;
+  line-height: 100%;
+  border-left: 1px solid #dbdbdb;
+  padding-left: 30rpx;
+}
+.button button{
+  width: 610rpx !important;
+  background: #fbb643;
+  color: #fff;
+}
+.button-hover{
+  background: #d48c10 !important;
+}
+.text{
+  color: #333;
+  font-size: 24rpx;
+  text-align: center;
+  width: 94%;
+  margin-left: 3%;
+  position: absolute;
+  left: 0;
+  bottom: 80rpx;
+}

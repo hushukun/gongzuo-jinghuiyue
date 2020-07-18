@@ -1,0 +1,121 @@
+.visit{
+  width: 94%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  /* height: 100vh; */
+  padding: 20rpx 3%;
+  background: #f2f2f2;
+}
+.scroll{
+  width: 100%;
+  height: 100%;
+}
+.main-list{
+  width: 100%;
+}
+.main-item{
+  padding: 0 20rpx 20rpx;
+  background: #fff;
+  margin-bottom: 20rpx;
+  transition: all 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+.main-item.height{
+  height: 390rpx; 
+  transition: all 0.3s;
+}
+.item-title{
+  height: 98rpx;
+  border-bottom: 1px solid #fbb51f;
+  box-sizing: border-box;
+  margin-bottom: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.item-title text{
+  font-size: 36rpx;
+}
+.item-title .time{
+  font-size: 24rpx;
+  color: #333;
+  margin-left: 40rpx;
+}
+.information{
+  padding: 12rpx 0;
+  display: flex;
+  align-items: center;
+}
+.information text{
+  flex: 1;
+  font-size: 24rpx;
+  color: #666;
+}
+.button-list{
+  display: flex;
+  margin: 10rpx 0 0;
+}
+.button-list .btn{
+  height: 44rpx;
+  line-height: 44rpx;
+  font-size: 24rpx;
+  padding: 0 20rpx;
+  margin: 0;
+  margin-right: 20rpx;
+}
+.button-list .btn.edit{
+  width: 100rpx;
+  background: #f9eed9;
+  color: #d99002;
+}
+.button-list .btn.delete{
+  width: 100rpx;
+  background: #d9f2eb;
+  color: #00ab7c;
+}
+.sanjiao{
+  width: 0;
+  height: 0;
+  border: 20rpx solid;
+  border-color: #fbb51f transparent transparent transparent;
+  margin-bottom: 10rpx;
+  position: absolute;
+  bottom: -6rpx;
+  right: 20rpx;
+}
+.sanjiao.sanjiaos{
+  border-color: transparent transparent #fbb51f transparent;
+  bottom: 0;
+}
+.fixed{
+  width: 90rpx;
+  height: 205rpx;
+  position: fixed;
+  right: 24rpx;
+  bottom: 110rpx;
+  z-index: 999;
+}
+.add{
+  margin-bottom: 20rpx;
+}
+.add,.delete{
+  width: 90rpx;
+  height: 90rpx;
+  overflow: hidden;
+}
+.add image,.delete image{
+  width: 90rpx;
+  height: 90rpx;
+}
+
+.button-hover{
+  background: #fff !important;
+}
+.dataNone{
+  text-align: center;
+  margin-top: 40rpx;
+  font-size: 48rpx;
+  color: #ccc;
+}

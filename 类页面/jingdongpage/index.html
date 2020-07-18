@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=0,maximum-scale=1.0,user-scalable=yes" name="viewport">
+    <title>首页商城</title>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <link rel="stylesheet/less" type="text/css" href="css/index.less" />
+    <script src="js/less.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/login-if.js"></script>
+    <script src="js/url.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- 头部搜索 -->
+        <div class="header-bg">
+            <header class="header">
+                <div class="logo">
+                    <img src="images/jingdong.png" alt="">
+                </div>
+                <div class="search-warp">
+                    <div class="search">
+                        <i class="iconfont icon-sousuo"></i>
+                        <input type="text" placeholder="请输入搜索内容" id="inputValue">
+                        <button id="clackSearch">搜索</button>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!-- 主体 -->
+        <div class="category-bg">
+            <!-- 分类导航 -->
+            <div class="category">
+                <div class="left-nav">
+                    <ul class="nav"></ul>
+                </div>
+                <div class="banner-wrap">
+                    <div class="banner" id="banner">
+                        <ul class="banner-img" id="banner-img">
+                            <li class="active"><img src="images/banner1.jpg"></li>
+                            <li><img src="images/banner2.jpg"></li>
+                            <li><img src="images/banner3.jpg"></li>
+                            <li><img src="images/banner4.jpg"></li>
+                        </ul>
+                        <div id="next"></div>
+                        <ul class="dots" id="dots">
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="banner bannermin">
+                        <ul class="banner-img" id="banner-img1">
+                            <li class="active"><img src="images/banner7.png"></li>
+                            <li><img src="images/banner8.png"></li>
+                            <li><img src="images/banner9.png"></li>
+                        </ul>
+                        <div id="next1"></div>
+                    </div>
+                </div>
+                <div class="right-login">
+                    <div class="login" id="login">
+                        <img src="images/avatar.png" alt="">
+                        <h3 id="username">您好！欢迎访问</h3>
+                        <div id="removebtn">
+                            <a href="views/login.html"> <button>登录</button></a>
+                            <a href="views/register.html"> <button>注册</button></a>
+                        </div>
+                    </div>
+                    <div class="advertising">
+                        <img src="images/jingdong.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- 底部图片 -->
+            <div class="category-img">
+                <img src="images/footer.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        2020 京慧越公司 版权所有
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

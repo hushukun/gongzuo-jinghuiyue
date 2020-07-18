@@ -1,0 +1,68 @@
+<!-- 添加院校信息页面 -->
+<view class="add-user">
+	<scroll-view scroll-y="true" class="scroll">
+		<block>
+			<view class="school">
+				<text>学校名称</text>
+				<view class="input">
+					<input placeholder="请输入学校名称" bindinput="nameFn"></input>
+				</view>
+			</view>
+			<view class="school">
+				<text>学校类型</text>
+				<picker bindchange="bindPickerType" value="{{typeIndex}}" range="{{schoolType}}" class="input">
+					<view class="picker">
+						当前选择：{{schoolType[typeIndex]}}
+					</view>
+				</picker>
+			</view>
+			<view class="school">
+				<text>学校性质</text>
+				<picker bindchange="bindPickerNature" value="{{natureIndex}}" range="{{schoolNature}}" class="input">
+					<view class="picker">
+						当前选择：{{schoolNature[natureIndex]}}
+					</view>
+				</picker>
+			</view>
+			<view class="school">
+				<text>主管单位</text>
+				<view class="input">
+					<input placeholder="主管单位" bindinput="companyFn"></input>
+				</view>
+			</view>
+			<view class="school">
+				<text>学校地址</text>
+				<picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}" class="input">
+					<view class="picker">
+						当前选择：{{region[0]}}，{{region[1]}}，{{region[2]}}
+					</view>
+				</picker>
+			</view>
+			<view class="school">
+				<text>详细地址</text>
+				<view class="input">
+					<input placeholder="请输入详细地址" bindinput="addressFn"></input>
+				</view>
+			</view>
+			<view class="school">
+				<text>学院代码</text>
+				<view class="input">
+					<input placeholder="请输入学校代码" bindinput="codeFn"></input>
+				</view>
+			</view>
+			<view class="school">
+				<text>占地面积</text>
+				<view class="input">
+					<input placeholder="请输入占地面积" bindinput="areaFn"></input>
+				</view>
+			</view>
+			<view class="school">
+				<text>在校人数</text>
+				<view class="input">
+					<input placeholder="请输入在校人数" bindinput="numberFn"></input>
+				</view>
+			</view>
+		</block>
+		<button class="button" bindtap="addFn">保存</button>
+	</scroll-view>
+</view>

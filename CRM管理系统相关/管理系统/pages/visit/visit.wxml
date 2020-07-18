@@ -1,0 +1,65 @@
+<!-- 拜访信息页面 -->
+<view class="visit">
+	<scroll-view scroll-y="true" class="scroll" style="height:{{winH}}px">
+		<block wx:if="{{dataList.length>0}}">
+			<view class="main-item" wx:for="{{dataList}}" wx:key="index">
+				<!-- 标题 -->
+				<view class="item-title">
+					<view>
+						<text>{{item.customer}}</text>
+						<text class="time">{{item.visitTime}}</text>
+					</view>
+					<view></view>
+					<!-- 取消批量删除icon选中功能 -->
+					<!-- <view class="icon" catchtap="iconactiveFn" data-index="{{index}}">
+						<icon class="icon-small" type="success" size="23" color="#007bfe" wx:if="{{item.icon}}"></icon>
+						<icon class="icon-small" type="circle" size="23" wx:else></icon>
+					</view> -->
+				</view>
+				<view bindtap="activeFn" data-index="{{index}}">
+					<view class="information">
+						<text>院系：{{item.yuanxi}}</text>
+						<text>职务：{{item.zhiwu}}</text>
+					</view>
+					<view class="information">
+						<text>拜访目的：{{item.project}}</text>
+						<text>院校等级：{{item.type}}</text>
+					</view>
+					<block wx:if="{{item.fold}}">
+						<!--  判断是否折叠显示 -->
+						<view class="information">
+							<text>拜访进度：{{item.visitContent}}</text>
+						</view>
+						<view class="information">
+							<text>遇到的问题：{{item.problem}}</text>
+						</view>
+						<view class="information">
+							<text>下一步计划：{{item.plan}}</text>
+						</view>
+						<view class="button-list">
+							<button class="btn edit" catchtap="visiteditFn" data-gid="{{item.id}}">编辑</button>
+							<!-- 取消删除功能，保留 -->
+							<!-- <button class="btn delete" catchtap="deleteFn" data-gid="{{item.id}}">删除</button> -->
+						</view>
+					</block>
+				</view>
+				<!-- 三角符号展示 -->
+				<block>
+					<view class="sanjiao sanjiaos" bindtap="activeFn" data-index="{{index}}" wx:if="{{item.fold}}"></view>
+					<view class="sanjiao" bindtap="activeFn" data-index="{{index}}" wx:else></view>
+				</block>
+			</view>
+		</block>
+		<block wx:else>
+			<view class="dataNone">暂无信息</view>
+		</block>
+	</scroll-view>
+	<view class="fixed">
+		<view class="add" bindtap="addvisitFn">
+			<image src="../../images/tianjia.png"></image>
+		</view>
+		<!-- <view class="delete" bindtap="batahFn">
+			<image src="../../images/shanchu.png"></image>
+		</view> -->
+	</view>
+</view>

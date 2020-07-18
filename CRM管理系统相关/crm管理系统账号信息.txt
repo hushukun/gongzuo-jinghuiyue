@@ -1,0 +1,5 @@
+地址:http://39.104.135.244/manage_system/admin/index.action
+
+业务账号:yewu 密码:a123456
+经理账号:jingli 密码:a123456
+超级管理员:superadmin 密码:a123456

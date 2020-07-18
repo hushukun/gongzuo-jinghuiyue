@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=0,maximum-scale=1.0,user-scalable=yes" name="viewport">
+    <title>淘宝商城</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <link rel="stylesheet/less" type="text/css" href="css/index.less" />
+    <script src="js/less.min.js"></script>
+    <script src="js/login-if.js"></script>
+    <script src="js/url.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div class="main-wrap">
+            <div class="left"></div>
+            <div class="main">
+                <!-- 头部搜索 -->
+                <header class="header">
+                    <!-- 顶部广告图 -->
+                    <div class="top">
+                        <div class="logo">
+                            <img src="images/min-logo.png" alt="">
+                        </div>
+                        <div style="background: url('./images/top1.png') center center no-repeat;" class="item">
+                            <div class="item-title">
+                                <h4>手表眼镜</h4>
+                                <p>200-20直降</p>
+                            </div>
+                            <div class="item-img">
+                                <img src="images/top11.webp" alt="">
+                            </div>
+                        </div>
+                        <div style="background: url('./images/top2.png') center center no-repeat;" class="item">
+                            <div class="item-title">
+                                <h4>手表眼镜</h4>
+                                <p>200-20直降</p>
+                            </div>
+                            <div class="item-img">
+                                <img src="images/top22.webp" alt="">
+                            </div>
+                        </div>
+                        <div style="background: url('./images/top3.png') center center no-repeat;" class="item">
+                            <div class="item-title">
+                                <h4>手表眼镜</h4>
+                                <p>200-20直降</p>
+                            </div>
+                            <div class="item-img">
+                                <img src="images/top33.webp" alt="">
+                            </div>
+                        </div>
+                        <div style="background: url('./images/top4.png') center center no-repeat;" class="item">
+                            <div class="item-title">
+                                <h4>手表眼镜</h4>
+                                <p>200-20直降</p>
+                            </div>
+                            <div class="item-img">
+                                <img src="images/top44.webp" alt="">
+                            </div>
+                        </div>
+                        <div style="background: url('./images/top5.png') center center no-repeat;" class="item">
+                            <div class="item-title">
+                                <h4>手表眼镜</h4>
+                                <p>200-20直降</p>
+                            </div>
+                            <div class="item-img">
+                                <img src="images/top55.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search">
+                        <div class="logo">
+                            <img src="images/B2Clogo.png" alt="">
+                        </div>
+                        <div class="search-warp">
+                            <div class="search">
+                                <i class="iconfont icon-sousuo"></i>
+                                <input type="text" placeholder="请输入搜索内容" id="inputValue">
+                                <button id="clackSearch">搜索</button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <!-- 分类导航 -->
+                <div class="category-wrap">
+                    <div class="category">
+                        <div class="left-nav">
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <div class="navBlock">
+                                        <div class="title">
+                                            <a href="views/category.html?id=123">女装男装</a>
+                                        </div>
+                                    </div>
+                                    <div class="navNone">
+                                        <div class="navNone-item">
+                                            <div class="navNone-title">女装</div>
+                                            <div class="navNone-list">
+                                                <a href="">裤子</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="banner">
+                            <ul class="banner-img" id="banner-img">
+                                <li class="active"><img src="images/banner1.jpg"></li>
+                                <li><img src="images/banner2.jpg"></li>
+                                <li><img src="images/banner3.jpg"></li>
+                                <li><img src="images/banner4.jpg"></li>
+                            </ul>
+                            <div id="next"></div>
+                            <ul class="dots" id="dots">
+                                <li class="active"></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="right-login">
+                            <div class="login" id="login">
+                                <img src="images/avatar.png" alt="">
+                                <h3 id="username">您好！欢迎访问</h3>
+                                <div id="removebtn">
+                                    <a href="views/login.html"> <button>登录</button></a>
+                                    <a href="views/register.html"> <button>注册</button></a>
+                                </div>
+                            </div>
+                            <div class="advertising">
+                                <img src="images/B2Clogo.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="category-img">
+                        <a href="views/detail.html?id=4"><img src="images/footer4.png" alt=""></a>
+                        <a href="views/detail.html?id=5"><img src="images/footer5.png" alt=""></a>
+                        <a href="views/detail.html?id=6"><img src="images/footer6.png" alt=""></a>
+                        <a href="views/detail.html?id=7"><img src="images/footer7.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="right"></div>
+        </div>
+        <div class="footer">
+            <div class="footer-img">
+                <img src="images/footer1.jpg" alt="">
+                <img src="images/footer2.jpg" alt="">
+                <img src="images/footer3.jpg" alt="">
+            </div>
+            <div class="footer-text">
+                2020 京慧越公司 版权所有
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

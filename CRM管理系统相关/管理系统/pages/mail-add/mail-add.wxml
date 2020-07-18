@@ -1,0 +1,45 @@
+<!-- 通讯录编辑页面 -->
+<view class="add-user">
+  <scroll-view scroll-y="true" class="scroll">
+    <block>
+      <view class="school">
+          <text>姓名</text>
+          <view class="input">
+            <input placeholder="请输入姓名" bindinput="nameFn"></input>
+          </view>
+      </view>
+      <view class="school">
+          <text>手机</text>
+          <view class="input">
+            <input placeholder="请输入手机" bindinput="iphoneFn"></input>
+          </view>
+      </view>
+      <view class="school">
+          <text>院系</text>
+          <view class="input">
+            <input placeholder="请输入院系名称" bindinput="departmentFn"></input>
+          </view>
+      </view>
+      <view class="school">
+          <text>职务</text>
+          <view class="input">
+            <input placeholder="请输入职务" bindinput="postFn"></input>
+          </view>
+      </view>
+      <view class="school">
+          <text>固话</text>
+          <view class="input">
+            <input placeholder="请输入固定电话" bindinput="telephoneFn"></input>
+          </view>
+      </view>
+      <view class="school">
+          <text>邮箱</text>
+          <view class="input">
+            <input placeholder="请输入邮箱" bindinput="emailFn"></input>
+          </view>
+      </view>
+    </block>
+    <button class="button" bindtap="addFn">保存</button>
+  </scroll-view>
+</view>
+

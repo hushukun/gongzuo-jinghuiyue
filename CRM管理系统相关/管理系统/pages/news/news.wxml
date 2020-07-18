@@ -1,0 +1,86 @@
+<!--消息页面-->
+<view class="news">
+	<block wx:if="true">
+		<scroll-view scroll-y="true" class="scroll" style="height:{{height-20}}px">
+			<view class="main-item">
+				<!-- 标题 -->
+				<view class="item-title">
+					<text>李小明</text>
+				</view>
+				<!-- 点击折叠或展开 -->
+				<view catchtap="activeFn" data-indexs="{{index}}">
+					<view class="information">
+						<text>学校：1</text>
+						<text>项目名：1</text>
+					</view>
+					<view class="information">
+						<text>项目阶段：1</text>
+						<text>项目金额：1</text>
+					</view>
+					<!-- 要折叠的区域 -->
+					<view class="information">
+						<text>预计打款时间：1</text>
+					</view>
+					<view class="information">
+						<text>遇到阻力：1</text>
+					</view>
+					<view class="information">
+						<text>下步计划：1</text>
+					</view>
+					<view class="information">
+						<text>创建时间：1</text>
+					</view>
+				</view>
+				<!-- 三角符号展示 -->
+				<block>
+					<view class="sanjiao sanjiaos" catchtap="activeFn" data-indexs="{{index}}" wx:if="{{item.fold}}"></view>
+					<view class="sanjiao" catchtap="activeFn" data-indexs="{{index}}" wx:else></view>
+				</block>
+			</view>
+			<view class="main-item">
+				<!-- 标题 -->
+				<view class="item-title">
+					<text>李小明</text>
+				</view>
+				<!-- 点击折叠或展开 -->
+				<view catchtap="activeFn" data-indexs="{{index}}">
+					<view class="information">
+						<text>拜访对象：1</text>
+						<text>院系：1</text>
+					</view>
+					<view class="information">
+						<text>拜访人职务：1</text>
+						<text>拜访目的：1</text>
+					</view>
+					<!-- 要折叠的区域 -->
+					<view class="information">
+						<text>院校等级：1</text>
+					</view>
+					<view class="information">
+						<text>拜访进度：1</text>
+					</view>
+					<view class="information">
+						<text>遇到的问题：1</text>
+					</view>
+					<view class="information">
+						<text>下步计划：1</text>
+					</view>
+          <view class="information">
+						<text>拜访时间：1</text>
+					</view>
+				</view>
+
+				<!-- 三角符号展示 -->
+				<block>
+					<view class="sanjiao sanjiaos" catchtap="activeFn" data-indexs="{{index}}" wx:if="{{item.fold}}"></view>
+					<view class="sanjiao" catchtap="activeFn" data-indexs="{{index}}" wx:else></view>
+				</block>
+			</view>
+		</scroll-view>
+	</block>
+	<block wx:else>
+		<view class="dataNone">
+			暂无数据
+		</view>
+	</block>
+</view>

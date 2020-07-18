@@ -1,0 +1,45 @@
+<!-- 通讯录页面 -->
+<view class="mail-list">
+	<scroll-view scroll-y="true" class="scroll" style="height:{{winH}}px">
+		<block wx:if="{{dataList.length>0}}">
+			<view class="main-item" wx:for="{{dataList}}" wx:key="index">
+				<!-- 标题 -->
+				<view class="item-title">
+					<view>
+						<text>{{item.tname}}</text>
+						<text class="time">{{item.tphone}}</text>
+					</view>
+					<view></view>
+					<!-- 批量选中icon功能，已隐藏 -->
+					<!-- <view class="icon" bindtap="iconactiveFn" data-index="{{index}}">
+						<icon class="icon-small" type="success" size="23" color="#007bfe" wx:if="{{item.fold}}"></icon>
+						<icon class="icon-small" type="circle" size="23" wx:else></icon>
+					</view> -->
+				</view>
+				<view class="information">
+					<text>院系：{{item.department}}</text>
+					<text>职务：{{item.position}}</text>
+				</view>
+				<view class="information">
+					<text>固话：{{item.ttel}}</text>
+					<text>邮箱：{{item.temail}}</text>
+				</view>
+				<view class="button-list">
+					<button class="btn edit" bindtap="visiteditFn" data-gid="{{item.id}}">编辑</button>
+					<!-- <button class="btn delete" bindtap="deleteFn" data-gid="{{item.id}}">删除</button> -->
+				</view>
+			</view>
+		</block>
+		<block wx:else>
+			<view class="dataNone">暂无联系人</view>
+		</block>
+	</scroll-view>
+	<view class="fixed">
+		<view class="add" bindtap="addvisitFn">
+			<image src="../../images/tianjia.png"></image>
+		</view>
+		<!-- <view class="delete" bindtap="batahFn">
+			<image src="../../images/shanchu.png"></image>
+		</view> -->
+	</view>
+</view>

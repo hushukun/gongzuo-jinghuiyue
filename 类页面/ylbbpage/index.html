@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=0,maximum-scale=1.0,user-scalable=yes" name="viewport">
+    <title>首页商城</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <link rel="stylesheet/less" type="text/css" href="css/index.less" />
+    <script src="js/less.js"></script>
+    <script src="js/login-if.js"></script>
+    <script src="js/url.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- 头部搜索 -->
+        <header class="header">
+            <div class="logo">
+                <img src="images/1688logo.png" alt="">
+            </div>
+            <div class="search-warp">
+                <div class="search">
+                    <i class="iconfont icon-sousuo"></i>
+                    <input type="text" placeholder="请输入搜索内容" id="inputValue">
+                    <button id="clackSearch">搜索</button>
+                </div>
+            </div>
+        </header>
+        <!-- 导航 -->
+        <div class="naviGation">
+            <ul class="naviGation-main"></ul>
+        </div>
+        <!-- 分类 -->
+        <div class="category-wrap">
+            <div class="category">
+                <div class="left-nav">
+                    <ul class="nav">
+                        <!-- <li class="nav-item">
+                            <div class="navBlock">
+                                <div class="title">
+                                    <a href=""></a>
+                                </div>
+                            </div>
+                            <div class="navNone">
+                                <div class="navNone-title">
+                                    <section>
+                                        <header>
+                                            <div><a href="views/category.html?id=1234567">123</a></div>
+                                        </header>
+                                        <div>
+                                            <h3>123</h3>
+                                            <p><a href=""></a></p>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="banner">
+                    <ul class="banner-img" id="banner-img">
+                        <li class="active"><img src="images/banner1.jpg"></li>
+                        <li><img src="images/banner2.jpg"></li>
+                        <li><img src="images/banner3.jpg"></li>
+                        <li><img src="images/banner4.jpg"></li>
+                    </ul>
+                    <div id="next"></div>
+                    <ul class="dots" id="dots">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="right-login">
+                    <div class="login" id="login">
+                        <img src="images/avatar.png" alt="">
+                        <h3 id="username">您好！欢迎访问</h3>
+                        <div id="removebtn">
+                            <a href="views/login.html"><button>登录</button></a>
+                            <a href="views/register.html"> <button>注册</button></a>
+                        </div>
+                    </div>
+                    <div class="advertising">
+                        <img src="images/1688logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="category-img">
+                <a href="views/detail.html?id=4"><img src="images/footer3.jpg" alt=""></a>
+                <a href="views/detail.html?id=5"><img src="images/footer4.png" alt=""></a>
+                <a href="views/detail.html?id=6"><img src="images/footer5.jpg" alt=""></a>
+                <a href="views/detail.html?id=7"><img src="images/footer6.png" alt=""></a>
+            </div>
+        </div>
+        <div class="footer-img">
+            <a href="views/detail.html?id=8"><img src="images/footer1.jpg" alt=""></a>
+            <a href="views/detail.html?id=9"><img src="images/footer2.png" alt=""></a>
+        </div>
+    </div>
+    <div class="footer">
+        2020 京慧越公司 版权所有
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

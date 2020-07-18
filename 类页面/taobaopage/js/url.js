@@ -1,0 +1,1 @@
+var publicUrl = "http://192.168.0.100:8080/taobao/"

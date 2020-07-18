@@ -1,0 +1,74 @@
+<!-- 拜访信息编辑页面 -->
+<view class="add-user">
+	<scroll-view scroll-y="true" class="scroll">
+		<block>
+			<view class="school">
+				<text>姓名</text>
+				<view class="input">
+					<input value="{{name}}" bindinput="nameFn"></input>
+				</view>
+			</view>
+			<view class="school">
+				<text>日期</text>
+				<picker class="input" mode="date" value="{{date}}" start="2015-09-01" end="2025-09-01" bindchange="bindDateChange">
+					<view class="picker">
+						点击选择拜访日期: {{date}}
+					</view>
+				</picker>
+			</view>
+			<view class="school">
+				<text>时间</text>
+				<picker class="input" mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+					<view class="picker">
+						点击选择拜访时间: {{time}}
+					</view>
+				</picker>
+			</view>
+			<view class="school">
+				<text>院系</text>
+				<view class="input">
+					<input value="{{yuanxi}}" bindinput="yuanxiFn"></input>
+				</view>
+			</view>
+			<view class="school">
+				<text>职务</text>
+				<view class="input">
+					<input value="{{type}}" bindinput="typeFn"></input>
+				</view>
+			</view>
+			<view class="school">
+				<text>拜访目的</text>
+				<view class="input">
+					<input value="{{objective}}" bindinput="objectiveFn"></input>
+				</view>
+			</view>
+			<view class="school">
+				<text>拜访进度</text>
+				<view class="input">
+					<input value="{{visitContent}}" bindinput="visitContentFn"></input>
+				</view>
+			</view>
+			<view class="school">
+				<text>院校等级</text>
+				<picker class="input" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+					<view class="picker">
+						当前选择：{{array[index]}}
+					</view>
+				</picker>
+			</view>
+			<view class="school">
+				<text>遇到的问题</text>
+				<view class="input">
+					<input value="{{problem}}" bindinput="problemFn"></input>
+				</view>
+			</view>
+			<view class="school">
+				<text>下一步计划</text>
+				<view class="input">
+					<input value="{{plan}}" bindinput="planFn"></input>
+				</view>
+			</view>
+		</block>
+		<button class="button" bindtap="addFn">保存</button>
+	</scroll-view>
+</view>
